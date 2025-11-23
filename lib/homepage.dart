@@ -1,3 +1,4 @@
+import 'package:assignment4/assignment5.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -13,6 +14,25 @@ class Homepage extends StatelessWidget {
           IconButton(onPressed: (){}, icon: Icon(Icons.settings)),
           IconButton(onPressed: (){}, icon: Icon(Icons.logout)),
         ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  "Image:",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            Center(child: Assignment5()),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
