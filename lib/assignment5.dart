@@ -1,3 +1,4 @@
+import 'package:assignment4/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class Assignment5 extends StatefulWidget {
@@ -19,6 +20,16 @@ class _Assignment5State extends State<Assignment5> {
           width: 200,
           height: 200,
           fit: BoxFit.cover,
+        ),
+        SizedBox(height: 20,),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfilePage()),
+            );
+          },
+          child: Text("Go to Next Page"),
         ),
       ],
     );
